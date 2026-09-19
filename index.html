@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Bliss</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="#" class="header-link">Home</a>
+                </li>
+                <li class="header-item">
+                    <a href="#" class="header-link">Pricing</a>
+                </li>
+                <li class="header-item">
+                    <a href="#" class="header-link">Blog</a>
+                </li>
+            </ul>
+            <a href="./index.html" class="header-logo">
+                <svg class="header-leaf">
+                    <use href="./images/symbol-defs.svg#icon-logo"></use>
+                </svg>
+                Trail Bliss
+            </a>
+            <button type="button" class="header-btn">
+                <svg class="header-menu">
+                    <use href="./images/symbol-defs.svg#icon-vector1"></use>
+                </svg>
+            </button>
+            <ul class="header-items">
+                <li class="header-elem">
+                    <a href="#" class="header-contact">Testimonial</a>
+                </li>
+                <li class="header-elem">
+                    <a href="#" class="header-contact">FAQ</a>
+                </li>
+                <li class="header-elem">
+                    <a href="#" class="header-contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-wrap">
+                    <h1 class="hero-title">
+                        Discover Your Next Great Adventure with Trail Bliss
+                    </h1>
+                    <div class="hero-content">
+                        <p class="hero-text">
+                            Uncover hidden gems, plan seamless trips, and make memories
+                            that last a lifetime. Your journey to bliss begins here.
+                        </p>
+                        <button type="button" class="hero-btn">
+                            Start Exploring
+                            <svg class="hero-arow">
+                                <use href="./images/symbol-defs.svg#icon-arow-3"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <picture class="hero-picture">
+                    <source
+                        media="(max-width: 1264px)"
+                        srcset="
+                            ./images/mobile/hero-mobile@1x.webp 1x,
+                            ./images/mobile/hero-mobile@2x.webp 2x">
+
+                    <source
+                        media="(min-width: 1265px)"
+                        srcset="
+                            ./images/desktop/hero-desktop@1x.webp 1x,
+                            ./images/desktop/hero-desktop@2x.webp 2x">
+
+                    <img
+                        src="./images/mobile/hero-mobile@1x.webp"
+                        alt="Adventure in the mountains"
+                        class="hero-image">
+                </picture>
+            </div>
+        </section>
+        <section class="adventure">
+            <div class="container">
+                <h2 class="adventure-title">
+                    Travel Tales That Inspire Adventure
+                </h2>
+                <p class="adventure-subtitle">
+                    Prepare for the journey of a lifetime. Explore our
+                    unforgettable experiences.
+                </p>
+                <article class="adventure-card">
+                    <picture>
+                        <source
+                            media="(max-width: 1264px)"
+                            srcset="">
+                        <img
+                            src=""
+                            alt="Desert adventure with a camper van"
+                            class="adventure-image">
+                    </picture>
+                    <div class="adventure-card-content">
+                        <h3 class="adventure-card-title">
+                            Explore our adventures
+                        </h3>
+                        <button type="button" class="adventure-card-btn">
+                            <svg class="adventure-card-icon">
+                                <use href="./images/symbol-defs.svg#icon-arow-2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+                <div class="adventure-info">
+                    <h3 class="adventure-info-title">
+                        Let’s Explore in a Group Tour
+                    </h3>
+                    <p class="adventure-info-text">
+                        At Trail Bliss, the spirit of group travel and discovery
+                        journeys is at the heart of everything we do. Join our
+                        carefully crafted group tours and experience the world
+                        together.
+                    </p>
+                </div>
+                <article class="adventure-card">
+                    <picture>
+                        <source
+                            media="(max-width: 1264px)"
+                            srcset="">
+                        <img
+                            src=""
+                            alt="Colorful city street"
+                            class="adventure-image">
+                    </picture>
+                    <div class="adventure-card-content">
+                        <h3 class="adventure-card-title">
+                            Explore our adventures
+                        </h3>
+                        <button type="button" class="adventure-card-btn">
+                            <svg class="adventure-card-icon">
+                                <use href="./images/symbol-defs.svg#icon-arow-2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+                <article class="adventure-card">
+                    <picture>
+                        <source
+                            media="(max-width: 1264px)"
+                            srcset="">
+                        <img
+                            src=""
+                            alt="Horse riding adventure"
+                            class="adventure-image">
+                    </picture>
+                    <div class="adventure-card-content">
+                        <button type="button" class="adventure-card-btn">
+                            <svg class="adventure-card-icon">
+                                <use href="./images/symbol-defs.svg#icon-play"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+                <article class="adventure-card">
+                    <picture>
+                        <source
+                            media="(max-width: 1264px)"
+                            srcset="">
+                        <img
+                            src=""
+                            alt="Colorful coastal village in Italy"
+                            class="adventure-image">
+                    </picture>
+                </article>
+                <div class="adventure-final">
+                    <h2 class="adventure-final-title">
+                        Your trusted companion in discovering the world’s hidden gems
+                    </h2>
+                    <p class="adventure-final-text">
+                        We believe that every journey has a story, and every
+                        traveler deserves an unforgettable experience. Founded
+                        with a passion for exploration and commitment to excellence.
+                    </p>
+                    <button type="button" class="adventure-final-btn">
+                        Start Exploring
+                        <svg class="adventure-final-arrow">
+                            <use href="./images/symbol-defs.svg#icon-arow-3"></use>
+                        </svg>
+                    </button>
+                </div>
+        </section>
+        <section class="events">
+            <div class="container">
+                <h2 class="events-title">
+                    Unforgettable Moments with Unique Events.
+                </h2>
+                <div class="events-slider">
+                    <button type="button" class="events-arrow events-arrow-prev">
+                        <svg>
+                            <use href="./images/symbol-defs.svg#icon-arow-1"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="events-arrow events-arrow-next">
+                        <svg>
+                            <use href="./images/symbol-defs.svg#icon-arow-1"></use>
+                        </svg>
+                    </button>
+                </div>
+                <article class="event-card">
+                    <picture>
+                        <source
+                            media="(max-width: 1264px)"
+                            srcset="
+                            ">
+                        <img
+                            src=""
+                            alt="Traveler in the desert"
+                            class="event-image">
+                    </picture>
+                    <div class="event-content">
+                        <span class="event-date">September</span>
+                        <h3 class="event-card-title">
+                            Explore Dubai Hidden Gems
+                        </h3>
+                        <p class="event-text">
+                            Discover breathtaking landscapes with curated nature
+                            travel experiences.
+                        </p>
+                        <span class="event-price-title">Starts from</span>
+                        <p class="event-price">$999</p>
+                    </div>
+                </article>
+                <article class="planning-card">
+                    <picture>
+                        <source
+                            media="(max-width: 1264px)"
+                            srcset="
+                            ">
+                        <img
+                            src=""
+                            alt="Colorful city architecture"
+                            class="planning-image">
+                    </picture>
+                    <div class="planning-content">
+                        <h2 class="planning-title">
+                            Simplify travel planning, and ensure that every step of
+                            your journey
+                        </h2>
+                        <p class="planning-text">
+                            We offer a comprehensive range of travel solutions
+                            designed to make your adventures seamless and unforgettable.
+                        </p>
+                        <button type="button" class="planning-btn">
+                            Start Exploring
+                            <svg>
+                                <use href="./images/symbol-defs.svg#icon-arow-3"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+                <section class="partner">
+                    <h2 class="partner-title">
+                        Your trusted travel partner
+                    </h2>
+                    <p class="partner-text">
+                        We offer a comprehensive range of travel solutions designed
+                        to make your adventures seamless and unforgettable.
+                    </p>
+                    <div class="partner-slider">
+                        <button type="button" class="partner-arrow partner-arrow-prev">
+                            <svg>
+                                <use href="./images/symbol-defs.svg#icon-arow-1"></use>
+                            </svg>
+                        </button>
+                        <button type="button" class="partner-arrow partner-arrow-next">
+                            <svg>
+                                <use href="./images/symbol-defs.svg#icon-arow-1"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <article class="testimonial-card">
+                        <svg>
+                            <use href="./images/symbol-defs.svg#icon-its"></use>
+                        </svg>
+                        <p class="testimonial-text">
+                                Trail Bliss made our family trip unforgettable! From
+                                booking the perfect accommodation to organizing exciting
+                                activities, everything was stress-free. Their attention
+                                to detail and personalized service truly made all the
+                                difference.
+                        </p>
+                        <div class="testimonial-author">
+                        <img
+                            src=""
+                            srcset="
+                            "
+                            alt="Sarah"
+                            class="testimonial-avatar">
+                        <div>
+                            <h3 class="testimonial-name">Sarah Thompson</h3>
+                            <p class="testimonial-role">California</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                        <svg>
+                            <use href="./images/symbol-defs.svg#icon-its"></use>
+                        </svg>
+                        <p class="testimonial-text">
+                                As a solo traveler, I was nervous about planning my trip. TrailBliss not only crafted an itinerary that matched my interests but also ensured I felt safe and supported throughout. Thanks to them, I discovered hidden gems I’d never have found on my own. Highly recommend!
+                        </p>
+                        <div class="testimonial-author">
+                        <img
+                            src=""
+                            srcset="
+                            "
+                            alt="Michael"
+                            class="testimonial-avatar">
+                        <div>
+                            <h3 class="testimonial-name">Michael Chen</h3>
+                            <p class="testimonial-role">Singapore</p>
+                        </div>
+                    </div>
+                </article>
+        </section>
+        <section class="eventes">
+            <div class="container">
+                <h2 class="eventes-title">
+                    Unforgettable Moments with Unique Events
+                </h2>
+                <article class="eventes-card">
+                    <picture>
+                        <source
+                            media="(max-width: 1264px)"
+                            srcset="
+                            ">
+                        <img
+                            src=""
+                            alt="Beach with colorful umbrellas"
+                            class="eventes-image">
+                    </picture>
+                    <div class="eventes-content">
+                        <div class="eventes-question">
+                            <p>What kind of trips does TrailBliss specialize in?</p>
+                            <button type="button" class="eventes-btn">
+                                <svg class="eventes-svg">
+                                    <use href="./images/symbol-defs.svg#icon-vector"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="eventes-answer">
+                            <p>
+                                We specialize in a variety of travel experiences,
+                                including adventure trips, cultural exploration,
+                                family vacations, and solo journeys. Whether you’re
+                                looking for a relaxing retreat or thrilling adventure,
+                                we have something for everyone.
+                            </p>
+                        </div>
+                        <div class="eventes-question">
+                            <p>Can you customize my travel itinerary?</p>
+                            <button type="button" class="eventes-btn">
+                                <svg class="eventes-svg">
+                                    <use href="./images/symbol-defs.svg#icon-vector"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="eventes-question">
+                            <p>Do you offer group travel packages?</p>
+                            <button type="button" class="eventes-btn">
+                                <button type="button" class="eventes-btn">
+                                    <svg class="eventes-svg">
+                                        <use href="./images/symbol-defs.svg#icon-vector"></use>
+                                    </svg>
+                                </button>
+                            </button>
+                        </div>
+                        <div class="eventes-question">
+                            <p>What kind of accommodations can you arrange?</p>
+                            <button type="button" class="eventes-btn">
+                                <button type="button" class="eventes-btn">
+                                    <svg class="eventes-svg">
+                                        <use href="./images/symbol-defs.svg#icon-vector"></use>
+                                    </svg>
+                                </button>
+                            </button>
+                        </div>
+                        <div class="eventes-question">
+                            <p>How do I book a trip with TrailBliss?</p>
+                            <button type="button" class="eventes-btn">
+                                <button type="button" class="eventes-btn">
+                                    <svg class="eventes-svg">
+                                        <use href="./images/symbol-defs.svg#icon-vector"></use>
+                                    </svg>
+                                </button>
+                            </button>
+                        </div>
+                        <div class="eventes-question">
+                            <p>Can you help with travel insurance?</p>
+                            <button type="button" class="eventes-btn">
+                                <button type="button" class="eventes-btn">
+                                    <svg class="eventes-svg">
+                                        <use href="./images/symbol-defs.svg#icon-vector"></use>
+                                    </svg>
+                                </button>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <a href="./index.html" class="footer-logo">
+                        <svg class="footer-leaf">
+                            <use href="./images/symbol-defs.svg#icon-logo"></use>
+                        </svg>
+                        Trail Bliss
+                    </a>
+                    <p class="footer-address">
+                        2118 Thornbridge Cir, Syracuse,
+                        Connecticut 35632
+                    </p>
+                    <div class="footer-block">
+                        <h3 class="footer-title">Contact</h3>
+                        <a href="#" class="footer-link">
+                            hello@trailbliss.com
+                        </a>
+                        <a href="#" class="footer-link">
+                            (555) 555-0555
+                        </a>
+                        <a href="#" class="footer-link">
+                            (555) 555-0110
+                        </a>
+                    </div>
+                    <div class="footer-block">
+                        <h3 class="footer-title">Quick links</h3>
+                        <a href="#" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Refund policy</a>
+                        <a href="#" class="footer-link">Terms and Conditions</a>
+                    </div>
+                    <div class="footer-block">
+                        <h3 class="footer-title">Follow us</h3>
+                        <a href="#" class="footer-link">Facebook</a>
+                        <a href="#" class="footer-link">Instagram</a>
+                        <a href="#" class="footer-link">YouTube</a>
+                    </div>
+                    <p class="footer-text">
+                        We are available all the time. Contact us today!
+                    </p>
+                    <li class="team-elem">
+                    <a href="" class="team-link">
+                      <svg class="team-icons">
+                        <use href="./images/symbol-defs.svg#icon-social-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-elem">
+                    <a href="" class="team-link">
+                      <svg class="team-icons">
+                        <use href="./images/symbol-defs.svg#icon-social-icon1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-elem">
+                    <a href="" class="team-link">
+                      <svg class="team-icons">
+                        <use href="./images/symbol-defs.svg#icon-social-icon2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-elem">
+                    <a href="" class="team-link">
+                      <svg class="team-icons">
+                        <use href="./images/symbol-defs.svg#icon-ball"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

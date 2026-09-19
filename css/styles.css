@@ -1,0 +1,283 @@
+.container {
+    max-width: 1264px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    background-color: #FEFCF7;
+    padding: 20px;
+    border-radius: 60px;
+}
+
+.header-logo {
+    color: #161616;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-leaf {
+    width: 20.1px;
+    height: 23.1px;
+}
+
+.header-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.header-menu {
+    width: 18px;
+    height: 12px;
+}
+
+.header-list {
+    display: none;
+}
+
+.header-items {
+    display: none;
+}
+
+.hero {
+    padding: 20px 0;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    width: 100%;
+    margin: 0;
+    color: #161616;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 350px;
+    margin: 18px 0 0;
+    color: #4d4d4d;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 157px;
+    height: 44px;
+    margin: 18px 0 20px;
+    padding: 0 17px;
+    border: none;
+    border-radius: 100px;
+    background-color: #161616;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero-arow {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+}
+
+.hero-picture {
+    display: block;
+    width: 100%;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+@media (min-width: 382px) {
+    .container {
+        width: 382px;
+    }
+
+    .hero-title {
+        width: 362px;
+        height: 105px;
+    }
+}
+
+@media (min-width: 1264px) {
+    .container {
+        width: 1264px;
+        padding: 0 12px;
+    }
+
+    .header {
+        padding-top: 40px;
+    }
+
+    .header .container {
+        padding: 24px 40px;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 32px;
+        margin-right: auto;
+    }
+
+    .header-link {
+        color: #161616;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .header-link:hover {
+        color: #ed952b;
+        transition-duration: 500ms;
+    }
+
+    .header-items {
+        display: flex;
+        gap: 32px;
+        margin-left: auto;
+    }
+
+    .header-contact {
+        color: #161616;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .header-elem:last-child {
+        .header-contact {
+            padding: 8px 14px;
+            border-radius: 100px;
+            border: 1px solid #161616;
+        }
+    }
+
+    .header-contact:hover {
+        color: #ed952b;
+        transition-duration: 500ms;
+    }
+
+    .header-elem:last-child:hover {
+        .header-contact {
+            border: 1px solid #ed952b;
+        }
+    }
+
+    .hero {
+        padding-top: 189px;
+        padding-bottom: 80px;
+    }
+
+    .hero-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    .hero-title {
+        width: 819px;
+        margin: 0;
+        text-align: left;
+        color: #161616;
+        font-family: "Manrope", sans-serif;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 110%;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 397px;
+        padding-top: 2px;
+    }
+
+    .hero-text {
+        width: 397px;
+        margin: 0;
+        color: #454444;
+        font-family: "Manrope", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 140%;
+        text-align: left;
+    }
+
+    .hero-btn {
+        margin: 20px 0 0;
+        padding: 18px 22px;
+        height: auto;
+        min-width: 0;
+        gap: 10px;
+        border-radius: 100px;
+        background: #161616;
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .hero-picture {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-image {
+        display: block;
+        width: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+}
