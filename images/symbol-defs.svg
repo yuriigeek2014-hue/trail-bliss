@@ -28,8 +28,8 @@
 <path stroke-width="4.2667" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M8.958 8.967h12.8v12.8"></path>
 <path stroke-width="4.2667" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M8.958 21.767l12.8-12.8"></path>
 </symbol>
-<symbol id="icon-arow-3" viewBox="0 0 32 32">
-<path stroke-width="1.6" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M21.333 25.331c0-0.989 0.977-2.467 1.967-3.707 1.272-1.6 2.792-2.996 4.535-4.061 1.307-0.799 2.891-1.565 4.165-1.565M32 15.998c-1.275 0-2.86-0.767-4.165-1.565-1.743-1.067-3.263-2.463-4.535-4.060-0.989-1.241-1.967-2.721-1.967-3.708M32 15.998h-32"></path>
+<symbol id="icon-arow-3" viewBox="0 0 53 32">
+<path stroke-width="2.6667" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M35.555 31.111c0-1.649 1.629-4.111 3.278-6.178 2.12-2.667 4.653-4.993 7.558-6.769 2.178-1.331 4.818-2.609 6.942-2.609M53.333 15.556c-2.125 0-4.767-1.278-6.942-2.609-2.905-1.778-5.438-4.104-7.558-6.767-1.649-2.069-3.278-4.536-3.278-6.18M53.333 15.556h-53.333"></path>
 </symbol>
 <symbol id="icon-vector1" viewBox="0 0 48 32">
 <path d="M0 32v-5.333h48v5.333h-48zM0 18.667v-5.333h48v5.333h-48zM0 5.333v-5.333h48v5.333h-48z"></path>

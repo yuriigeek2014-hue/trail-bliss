@@ -1,7 +1,12 @@
 .container {
+    width: 100%;
     max-width: 1264px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
 }
 
 .header {
@@ -18,7 +23,7 @@
 
 .header-logo {
     color: #161616;
-    font-family: Manrope;
+    font-family: "Manrope", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -77,17 +82,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .hero-text {
-    max-width: 350px;
+    width: 100%;
+    max-width: 362px;
     margin: 18px 0 0;
     color: #4d4d4d;
     text-align: center;
     font-family: "Manrope", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 140%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .hero-btn {
@@ -109,6 +116,11 @@
     cursor: pointer;
 }
 
+.hero-btn:hover {
+    background-color: #ed952b;
+    transition-duration: 750ms;
+}
+
 .hero-arow {
     width: 18px;
     height: 18px;
@@ -128,6 +140,835 @@
     object-fit: cover;
 }
 
+.adventure {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #FAFAFA;
+}
+
+.adventure-title {
+    color: #161616;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 12px;
+}
+
+.adventure-text {
+    color: #161616;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.adventure-card picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.adventure-card-horse {
+    display: block;
+}
+
+.adventure-card-horse .adventure-card-content {
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adventure-card-horse .adventure-card-btn {
+    position: static;
+    transform: none;
+}
+
+.adventure-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adventure-card {
+    position: relative;
+    width: 100%;
+    height: 232px;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.adventure-card-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+}
+
+.adventure-card-city .adventure-card-content {
+    position: absolute;
+    inset: 0;
+    padding: 8px;
+    display: block;
+}
+
+.adventure-card-city .adventure-card-title {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.adventure-card-city .adventure-card-btn {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+}
+
+.adventure-card-title {
+    margin: 0;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.adventure-card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #ed952b;
+    cursor: pointer;
+}
+
+.adventure-card-icon {
+    width: 12px;
+    height: 12px;
+    fill: #fff;
+}
+
+.adventure-card-btn:hover {
+    background-color: #fff;
+    transition-duration: 750ms;
+}
+
+.adventure-card-btn:hover .adventure-card-icon {
+    fill: #ed952b;
+}
+
+.adventure-info {
+    margin-top: 14px;
+    padding: 15px 18px;
+    background-color: #d5f5fc;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.adventure-subtitle {
+    max-width: 180px;
+    margin: 0 auto 10px;
+    color: #161616;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.adventure-info-text {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    color: #454444;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.adventure-final {
+    display: flex;
+    flex-direction: column;
+}
+
+.adventure-final-image {
+    display: block;
+    width: 100%;
+    height: 280px;
+    border-radius: 12px;
+}
+
+.adventure-final-content {
+    text-align: center;
+}
+
+.adventure-final-title {
+    width: 100%;
+    max-width: 340px;
+    margin: 20px auto 12px;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.adventure-final-text {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+    color: #454444;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.adventure-final-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 44px;
+    padding: 0 18px;
+    border: 1px solid #161616;
+    border-radius: 100px;
+    background-color: transparent;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+}
+
+.adventure-final-arrow {
+    width: 18px;
+    height: 18px;
+    fill: #161616;
+}
+
+.adventure-final-btn:hover {
+    color: #fff;
+    background-color: #161616;
+    transition-duration: 750ms;
+}
+
+.adventure-final-btn:hover .adventure-final-arrow {
+    fill: #fff;
+}
+
+.events {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.events-title {
+    width: 100%;
+    max-width: 362px;
+    margin: 0 auto 20px;
+    color: #161616;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.events-slider {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.events-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #161616;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.events-arrow svg {
+    width: 18px;
+    height: 18px;
+    fill: #161616;
+}
+
+.events-arrow-next svg {
+    transform: rotate(180deg);
+}
+
+.event-card:nth-child(2) {
+    display: none;
+}
+
+.events-arrow:hover {
+    background-color: #161616;
+    transition-duration: 750ms;
+}
+
+.events-arrow:hover svg {
+    fill: #fff;
+}
+
+.event-card picture {
+    display: block;
+    width: 100%;
+}
+
+.event-image {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.event-content {
+    padding: 18px;
+    text-align: center;
+}
+
+.event-date {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 50px;
+    background-color: #fbf1d6;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.event-card-title {
+    margin: 0 0 8px;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.event-helper {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-text {
+    width: 100%;
+    max-width: 322px;
+    margin: 0 auto 12px;
+    color: #454444;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.event-price-title {
+    display: block;
+    color: #454444;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.event-price {
+    margin: 2px 0 0;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.events-helper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact {
+    display: flex;
+    flex-direction: column;
+}
+
+.fact-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.fact-content {
+    text-align: center;
+}
+
+.fact-title {
+    width: 100%;
+    max-width: 340px;
+    margin: 20px auto 12px;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.fact-text {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+    color: #454444;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.fact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 44px;
+    padding: 0 18px;
+    border: 1px solid #161616;
+    border-radius: 100px;
+    background-color: transparent;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+}
+
+.fact-arrow {
+    width: 18px;
+    height: 18px;
+    fill: #161616;
+}
+
+.fact-btn:hover {
+    color: #fff;
+    background-color: #161616;
+    transition-duration: 750ms;
+}
+
+.fact-btn:hover .fact-arrow {
+    fill: #fff;
+}
+
+.testimonials {
+    padding: 40px 0;
+    background-color: #faf9f5;
+}
+
+.testimonials .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.testimonials-title {
+    width: 100%;
+    max-width: 340px;
+    margin: 20px auto 12px;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.testimonials-text {
+    width: 100%;
+    max-width: 357px;
+    color: #454444;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.testimonials-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.testimonials-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #1f1f1f;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.testimonials-arrow-icon {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: #1f1f1f;
+}
+
+.testimonials-arrow-next .testimonials-arrow-icon {
+    transform: rotate(180deg);
+}
+
+.testimonials-list {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 0 10px 8px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.testimonials-list::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    flex: 0 0 calc(100vw - 40px);
+    width: calc(100vw - 40px);
+    max-width: 351px;
+    min-height: 260px;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    scroll-snap-align: center;
+    text-align: left;
+}
+
+.testimonial-card:nth-child(2) {
+    display: none;
+}
+
+.testimonial-svg {
+    fill: #f5a623;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 16px;
+}
+
+.testimonial-text {
+    width: 100%;
+    margin: 0;
+    color: #000;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 291px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.testimonial-author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.testimonial-name {
+    margin: 0;
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.testimonial-location {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.eventes {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.eventes .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventes-title {
+    width: 100%;
+    max-width: 362px;
+    margin: 0 auto 30px;
+    color: #161616;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.eventes-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.eventes-card picture {
+    display: block;
+    width: 100%;
+}
+
+.eventes-image {
+    display: block;
+    max-width: 362px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.eventes-content {
+    width: 100%;
+}
+
+.eventes-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    min-height: 52px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.eventes-question p {
+    flex: 1;
+    min-width: 0;
+    margin: 0 0 12px;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.eventes-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.eventes-svg {
+    width: 14px;
+    height: 14px;
+    fill: #161616;
+}
+
+.eventes-answer {
+    padding: 10px 20px 15px 0;
+}
+
+.eventes-answer p {
+    margin: 0;
+    color: #777;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer {
+    padding: 0 10px 10px;
+    background-color: #fff;
+}
+
+.footer .container {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #FEFCF7;
+    border-radius: 24px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 120%;
+    text-decoration: none;
+}
+
+.footer-address {
+    width: 100%;
+    max-width: 252px;
+    margin: 0;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    text-align: center;
+}
+
+.footer-title {
+    margin: 0 0 4px;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-link {
+    color: #454444;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-leaf-footer {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+}
+
+.footer-leaf-a {
+    display: none;
+}
+
+.footer-link:hover {
+    color: #ed952b;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.team-icons {
+    width: 14px;
+    height: 14px;
+    fill: #161616;
+}
+
+.footer-bottom {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #161616;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+}
+
+
 @media (min-width: 382px) {
     .container {
         width: 382px;
@@ -137,6 +978,13 @@
         width: 362px;
         height: 105px;
     }
+
+    hero-text {
+        max-width: 362px;
+        width: 362px;
+        height: 75px;
+    }
+
 }
 
 @media (min-width: 1264px) {
@@ -212,7 +1060,7 @@
     }
 
     .hero {
-        padding-top: 189px;
+        padding-top: 40px;
         padding-bottom: 80px;
     }
 
@@ -222,7 +1070,7 @@
         align-items: flex-start;
         justify-content: space-between;
         width: 100%;
-        margin-bottom: 34px;
+        margin-bottom: 40px;
     }
 
     .hero-title {
@@ -242,10 +1090,11 @@
         align-items: flex-start;
         width: 397px;
         padding-top: 2px;
+        margin-bottom: 40px;
     }
 
     .hero-text {
-        width: 397px;
+        max-width: 397.0px;
         margin: 0;
         color: #454444;
         font-family: "Manrope", sans-serif;
@@ -279,5 +1128,552 @@
         width: 100%;
         border-radius: 30px;
         object-fit: cover;
+    }
+
+    .adventure {
+        padding: 80px 0;
+        background-color: #fafafa;
+    }
+
+    .adventure .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+    .adventure-title {
+        max-width: 650px;
+        margin: 0 auto 12px;
+        color: #161616;
+        text-align: left;
+        font-family: "Manrope", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 120%;
+        grid-column: 1 / 3;
+    }
+
+    .adventure-text {
+        max-width: 496px;
+        margin: 0 auto 48px;
+        text-align: left;
+        font-family: "Manrope", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+        grid-column: 3 / 5;
+    }
+
+    .adventure-card {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        border-radius: 16px;
+    }
+
+    .adventure-card {
+        height: 223px;
+    }
+
+    .adventure-card-desert {
+        grid-column: 1;
+        width: 397px;
+        height: 300px;
+    }
+
+    .adventure-info {
+        grid-column: 2;
+        width: 292px;
+        height: 360px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        border-radius: 16px;
+    }
+
+    .adventure-card-city {
+        grid-column: 3;
+        width: 292px;
+        height: 360px;
+    }
+
+    .adventure-card-horse {
+        grid-column: 4;
+        width: 187px;
+        height: 220px;
+    }
+
+    .adventure-card-content {
+        padding: 20px;
+    }
+
+    .adventure-card-title {
+        font-size: 18px;
+    }
+
+    .adventure-card-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .adventure-card-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .adventure-subtitle {
+        max-width: 133px;
+        margin-bottom: 16px;
+        margin-right: 130px;
+        font-size: 22px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .adventure-info-text {
+        max-width: 252px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: normal;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .adventure-final {
+        padding: 80px 0;
+        background-color: #fff;
+    }
+
+    .adventure-final .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .adventure-final-image {
+        display: block;
+        width: 100%;
+        max-width: 503px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left: 129px;
+    }
+
+    .adventure-final-title {
+        max-width: 620px;
+        margin: 0 0 18px;
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+    .adventure-final-text {
+        max-width: 608px;
+        margin: 0 0 24px;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .adventure-final-btn {
+        height: 50px;
+        padding: 0 22px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .adventure-final-content {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .events {
+        padding: 90px 0;
+        background-color: #fff;
+    }
+
+    .events-title {
+        max-width: 600px;
+        margin: 0 0 30px;
+        text-align: left;
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+    .events-slider {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin: -65px 0 30px;
+    }
+
+    .events-arrow {
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+        transition:
+            background-color 300ms ease,
+            color 300ms ease;
+    }
+
+    .events-arrow:hover {
+        background-color: #161616;
+    }
+
+    .events-arrow svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .events-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .event-card {
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .event-image {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+    }
+    
+    .event-content {
+        padding: 30px;
+        text-align: left;
+        display: flex;
+        align-items: last baseline;
+        gap: 65px;
+        background-color: #fff;
+    }
+
+    .event-card:nth-child(2) {
+        display: block;
+    }
+
+    .event-date {
+        margin-bottom: 18px;
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .event-card-title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .event-text {
+        max-width: 400px;
+        margin: 0 0 30px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .event-price-title {
+        font-size: 12px;
+    }
+
+    .event-price {
+        font-size: 28px;
+    }
+
+    .events-helper {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .fact {
+        padding: 80px 0;
+        background-color: #fff;
+    }
+
+    .fact .container {
+        display: grid;
+        gap: 129px;
+        align-items: center;
+    }
+
+    .fact-image {
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .fact-title {
+        max-width: 608px;
+        margin: 0 0 18px;
+        font-size: 48px;
+        line-height: 1.15;
+    }
+
+    .fact-text {
+        max-width: 608px;
+        margin: 0 0 24px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .fact-btn {
+        height: 50px;
+        padding: 0 22px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .fact-content {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .testimonials {
+        padding: 80px 0;
+        background-color: #faf9f5;
+    }
+
+    .testimonials .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .testimonials-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .testimonials-title {
+        max-width: 397px;
+        margin: 0 0 20px;
+        color: #161616;
+        text-align: left;
+        font-family: "Manrope", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .testimonials-text {
+        max-width: 330px;
+        margin: 0;
+        color: #454444;
+        text-align: left;
+        font-family: "Manrope", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    .testimonials-slider {
+        display: flex;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-top: 50px;
+    }
+
+    .testimonials-list {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .testimonial-card {
+        flex: 0 0 351px;
+        width: 351px;
+        min-width: 351px;
+        min-height: 260px;
+        padding: 24px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .testimonial-card:nth-child(2) {
+        display: block;
+    }
+
+    .testimonial-text {
+        width: 100%;
+        max-width: 291px;
+        margin: 0;
+        color: #000;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    .eventes {
+        padding: 80px 0;
+    }
+
+    .eventes-title {
+        max-width: 700px;
+        margin: 0 auto 50px;
+
+        font-size: 42px;
+        line-height: 120%;
+    }
+
+    .eventes-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .eventes-card picture {
+        width: 503px;
+        height: 580px;
+    }
+
+    .eventes-image {
+        width: 100%;
+        height: 580px;
+        border-radius: 20px;
+        max-width: 503px;
+    }
+
+    .eventes-content {
+        flex: 1;
+        width: auto;
+    }
+
+    .eventes-question {
+        min-height: 58px;
+    }
+
+    .eventes-question p {
+        font-size: 20px;
+    }
+
+    .eventes-answer {
+        padding: 0 30px 14px 0;
+    }
+
+    .eventes-answer p {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 0 0 20px;
+    }
+
+    .footer .container {
+        width: 100%;
+        padding: 40px;
+        border-radius: 30px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+        align-items: start;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .footer-main {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-logo {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .footer-leaf-a {
+        display: flex;
+        width: 21px;
+        height: 23px;
+    }
+
+    .footer-leaf-footer {
+        display: none;
+    }
+
+    .footer-address {
+        max-width: 252px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .footer-text {
+        grid-column: 5;
+        grid-row: 1;
+        max-width: 230px;
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    .footer-block {
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .footer-title {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .team-list {
+        justify-content: flex-end;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .team-icons {
+        width: 17px;
+        height: 17px;
+    }
+
+    .footer-bottom {
+        margin-top: -15px;
+        text-align: left;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
     }
 }
